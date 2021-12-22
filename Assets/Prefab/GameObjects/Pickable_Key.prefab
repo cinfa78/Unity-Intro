@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4529304559983823281}
   - component: {fileID: 4529304559983823282}
   m_Layer: 0
-  m_Name: Torus
+  m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2979,7 +2979,7 @@ GameObject:
   - component: {fileID: 4529304561641139185}
   - component: {fileID: 4529304561641139186}
   m_Layer: 0
-  m_Name: Pickable
+  m_Name: Pickable_Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3057,13 +3057,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetChildNum
         - HutongGames.PlayMaker.Actions.GetName
+        - HutongGames.PlayMaker.Actions.RandomWait
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 280cdd0571c75a03
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000001
+        actionStartIndex: 000000000300000006000000
+        actionHashCodes: 280cdd0571c75a030d5f5c01
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3104,7 +3106,19 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.5
         fsmIntParams:
         - useVariable: 0
           name: 
@@ -3118,13 +3132,14 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 00
+        stringParams:
+        - FINISHED
+        byteData: 0001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001000000013000000130000001200000001000000
+        paramDataType: 1400000010000000130000001300000012000000010000000f0000000f0000001700000001000000
         paramName:
         - gameObject
         - childIndex
@@ -3132,8 +3147,12 @@ MonoBehaviour:
         - gameObject
         - storeName
         - everyFrame
-        paramDataPos: 000000000000000000000000010000000000000000000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000
+        - min
+        - max
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000000000000000000001000000000000000000000000000000010000000000000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000000000001000000
     - name: idle
       description: 
       colorIndex: 0
@@ -3166,7 +3185,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 000001
+        actionIsOpen: 010001
         actionStartIndex: 00000000110000001b000000
         actionHashCodes: c1a70500b03274009c512400
         unityObjectParams: []
