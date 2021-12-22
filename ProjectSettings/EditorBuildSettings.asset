@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Level0-Vince.unity
+    guid: 3495ceb1a57b6be409166d9bf2334cbc
   m_configObjects: {}
