@@ -52,3 +52,6 @@ MonoBehaviour:
     variableCategoryIDs: 0000000000000000
   events:
   - GameProgress
+  - Up
+  - Down
+  - Move
